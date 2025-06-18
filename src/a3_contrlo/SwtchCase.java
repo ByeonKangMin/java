@@ -29,7 +29,7 @@ public class SwtchCase {
         System.out.println("요일을 입력해주세요");
         String day = scanner.nextLine(); //문자열 유저입력
         switch (day) {
-            case "월":
+            case "월": //'case "월","월요일":' 쉼표를 붙여서 사용가능
             case "월요일":
                 System.out.println("월요일입니다"); break;
             case "화":
@@ -51,5 +51,10 @@ public class SwtchCase {
                 System.out.println("휴일입니다"); break;
             default: System.out.println("올바른 요일을 입력해주세요");
         }
+        scanner.close(); //스캐너 객체를 메모리에서 삭제시킴
+        // 참조자료형이 생성되는 Heap 메로리의 경우, 필요없는 메모리는 삭제하기!
+        // 남아있으면 GC(Garbage Collector)에 의해 자동으로 삭제되지만,
+        // 코드상에서 명시적으로 삭제시키는 것이 좋은 습관임
+
     }
 }

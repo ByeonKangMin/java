@@ -12,7 +12,8 @@ public class IfElse {
         // if문의 기본형태2 : if() {} else{}
         if (a>5) {
             System.out.println(a);
-        } else  {
+        }
+        else  {
             System.out.println("조건은거짓");
         }
         // if문의 기본형태 3 : if() {} else if() {} else{}
@@ -40,5 +41,7 @@ public class IfElse {
         String userName = scanner.nextLine();
         System.out.println(userName);
         System.out.println("끝");
+        scanner.close(); //스캐너 객체를 메모리에서 삭제시킴
+
     }
 }
