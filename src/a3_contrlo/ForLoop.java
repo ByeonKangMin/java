@@ -22,7 +22,7 @@ public class ForLoop {
         System.out.println("반복끝");
 
         //컴파일에러가 발생하지 않지만 무한루프에 빠지게 되므로 사용x
-        //무한루프를 설계해도
+        //무한루프를 설계해도 적절한 sleep과 리소스 관리를 동반하면 문제
         for (; ; ) {
             System.out.println("무한루프");
 
@@ -36,6 +36,15 @@ public class ForLoop {
             for (int i = 0, j = 0; i < 10 && j < 10; i++, j++) {
                 System.out.println(i + "" + j);
             }
+            System.out.println("반복끝");
+
+            //for문 밖에서 interator를 참조해야만 한다면 아래처럼
+            int i;
+            for (i=0; i<10; i++) {
+                //실행코드
+            }
+            System.out.println("interator의 최종값은?");
+            System.out.println(i);
         }
     }
 }
