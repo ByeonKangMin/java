@@ -43,5 +43,31 @@ public class IfElse {
         System.out.println("끝");
         scanner.close(); //스캐너 객체를 메모리에서 삭제시킴
 
+        //if문의 중복
+        int  value1 = 5;
+        int  value2 = 3;
+        if  (value1 >4) {
+            if  (value2 >4) {
+                System.out.println("실행1");
+            } else {
+                System.out.println("실행2");
+            }
+        }else {
+            System.out.println("실행");
+        }
+
+        //if문의 code drilling 이슈
+        if (true){
+            if (true){
+                if (true){
+                    if (true){
+                        if (true){
+                                    // 가독성을 떨어뜨리므로 좋지 않은 코딩방법
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

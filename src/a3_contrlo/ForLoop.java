@@ -22,7 +22,7 @@ public class ForLoop {
         System.out.println("반복끝");
 
         //컴파일에러가 발생하지 않지만 무한루프에 빠지게 되므로 사용x
-        //무한루프를 설계해도 적절한 sleep과 리소스 관리를 동반하면 문제
+        //무한루프를 설계해도 적절한 sleep과 리소스 관리를 동반하면 문제x
         for (; ; ) {
             System.out.println("무한루프");
 
